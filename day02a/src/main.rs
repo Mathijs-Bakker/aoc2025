@@ -17,9 +17,9 @@ fn find_invalid_ids(ranges: Vec<(u64, u64)>) -> Vec<u64> {
     let mut ids: Vec<u64> = Vec::new();
 
     for rng in ranges {
-        for n in rng.0..=rng.1 {
-            if is_invalid_id(n) {
-                ids.push(n);
+        for id in rng.0..=rng.1 {
+            if is_invalid_id(id) {
+                ids.push(id);
             }
         }
     }
